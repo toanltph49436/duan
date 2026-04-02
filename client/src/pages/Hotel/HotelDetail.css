@@ -1,0 +1,139 @@
+/* Hotel Detail CSS */
+
+/* Date Picker Improvements */
+.hotel-date-picker {
+  z-index: 9999 !important;
+}
+
+.hotel-date-picker .ant-picker-dropdown {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+.hotel-date-picker .ant-picker-panel-container {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.hotel-date-picker .ant-picker-header {
+  border-bottom: 1px solid #f0f0f0 !important;
+  padding: 12px 16px !important;
+}
+
+.hotel-date-picker .ant-picker-cell {
+  transition: all 0.2s ease !important;
+}
+
+.hotel-date-picker .ant-picker-cell:hover .ant-picker-cell-inner {
+  background: #e6f7ff !important;
+  border-color: #91d5ff !important;
+}
+
+.hotel-date-picker .ant-picker-cell-selected .ant-picker-cell-inner {
+  background: #1890ff !important;
+  border-color: #1890ff !important;
+}
+
+.hotel-date-picker .ant-picker-cell-in-range .ant-picker-cell-inner {
+  background: #e6f7ff !important;
+}
+
+/* Prevent date jumping issues */
+.ant-picker-range {
+  position: relative !important;
+}
+
+.ant-picker-range .ant-picker-input {
+  text-align: center !important;
+}
+
+/* Smooth transitions */
+.ant-picker-dropdown {
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hotel-date-picker .ant-picker-panel-container {
+    width: 100% !important;
+    max-width: 350px !important;
+  }
+  
+  .hotel-date-picker .ant-picker-panels {
+    flex-direction: column !important;
+  }
+}
+
+/* Carousel improvements */
+.ant-carousel .slick-dots {
+  bottom: 20px !important;
+}
+
+.ant-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: white !important;
+}
+
+/* Card hover effects */
+.ant-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Button improvements */
+.ant-btn {
+  transition: all 0.3s ease !important;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 1024px) {
+  .ant-col-lg-16 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-carousel .slick-slide img {
+    height: 300px !important;
+  }
+  
+  .hotel-hero-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Fix for sticky positioning */
+.ant-affix {
+  z-index: 100 !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading improvements */
+.ant-spin-container {
+  transition: opacity 0.3s ease !important;
+}
+
+/* Image preview improvements */
+.ant-image-preview-mask {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(4px) !important;
+}

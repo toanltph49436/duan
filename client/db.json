@@ -1,0 +1,227 @@
+{
+    "user": [
+        {
+            "user_id": 1,
+            "username": "johndoe",
+            "password_hash": "hashed_pw1",
+            "email": "john@example.com",
+            "full_name": "John Doe",
+            "phone_number": "0123456789",
+            "address": "123 Main St",
+            "profile_picture": "john.jpg",
+            "created_at": "2025-06-09T08:51:43.477576",
+            "updated_at": "2025-06-09T08:51:43.477587"
+        }
+    ],
+    "admin": [
+        {
+            "admin_id": 1,
+            "adminname": "admin01",
+            "password_hash": "hashed_pw_admin",
+            "email": "admin@example.com",
+            "full_name": "Admin One",
+            "phone_number": "0987654321",
+            "address": "Admin HQ",
+            "profile_picture": "admin.jpg",
+            "created_at": "2025-06-09T08:51:43.477591",
+            "updated_at": "2025-06-09T08:51:43.477593"
+        }
+    ],
+    "tours": [
+        {
+            "tour_id": 1,
+            "tour_name": "Ha Long Bay Cruise",
+            "destination": "Ha Long",
+            "departure_location": "Hanoi",
+            "duration": 3,
+            "price": 300.0,
+            "promotion_price": 250.0,
+            "available_slots": 20,
+            "maxPeople": 30,
+            "imageTour": "halong.jpg",
+            "status": "available",
+            "description": "A beautiful cruise around Ha Long Bay.",
+            "tour_type": "cruise",
+            "created_at": "2025-06-09T08:51:43.477596",
+            "updated_at": "2025-06-09T08:51:43.477599"
+        },
+        {
+            "tour_id": 1,
+            "tour_name": "Ha Long Bay Cruise",
+            "destination": "Ha Long",
+            "departure_location": "Hanoi",
+            "duration": 3,
+            "price": 300.0,
+            "promotion_price": 250.0,
+            "available_slots": 20,
+            "maxPeople": 30,
+            "imageTour": "halong.jpg",
+            "status": "available",
+            "description": "A beautiful cruise around Ha Long Bay.",
+            "tour_type": "cruise",
+            "created_at": "2025-06-09T08:51:43.477596",
+            "updated_at": "2025-06-09T08:51:43.477599"
+        },
+        {
+            "tour_id": 1,
+            "tour_name": "Ha Long Bay Cruise",
+            "destination": "Ha Long",
+            "departure_location": "Hanoi",
+            "duration": 3,
+            "price": 300.0,
+            "promotion_price": 250.0,
+            "available_slots": 20,
+            "maxPeople": 30,
+            "imageTour": "halong.jpg",
+            "status": "available",
+            "description": "A beautiful cruise around Ha Long Bay.",
+            "tour_type": "cruise",
+            "created_at": "2025-06-09T08:51:43.477596",
+            "updated_at": "2025-06-09T08:51:43.477599"
+        },
+        {
+            "tour_id": 1,
+            "tour_name": "Ha Long Bay Cruise",
+            "destination": "Ha Long",
+            "departure_location": "Hanoi",
+            "duration": 3,
+            "price": 300.0,
+            "promotion_price": 250.0,
+            "available_slots": 20,
+            "maxPeople": 30,
+            "imageTour": "halong.jpg",
+            "status": "available",
+            "description": "A beautiful cruise around Ha Long Bay.",
+            "tour_type": "cruise",
+            "created_at": "2025-06-09T08:51:43.477596",
+            "updated_at": "2025-06-09T08:51:43.477599"
+        }
+    ],
+    "tour_schedule": [
+        {
+            "schedule_id": 1,
+            "tour_id": 1,
+            "day_number": 1,
+            "activity": "Arrival and check-in",
+            "location": "Ha Long Port",
+            "imageTourSchedule": "day1.jpg"
+        }
+    ],
+    "rooms": [
+        {
+            "room_id": 1,
+            "address": "Cruise Deck 3",
+            "room_name": "Ocean View",
+            "price_per_night": 120.0,
+            "description": "Room with sea view",
+            "imageRoom": "room1.jpg",
+            "capacity": 2,
+            "type_name": "deluxe",
+            "amenities": "WiFi, TV, Air Conditioning"
+        }
+    ],
+    "Transport": [
+        {
+            "transport_id": 1,
+            "transport_type": "Bus",
+            "name": "Express Ha Long",
+            "number": "HLB123",
+            "departure_location": "Hanoi",
+            "arrival_location": "Ha Long"
+        }
+    ],
+    "Transport_Schedule": [
+        {
+            "schedule_id": 1,
+            "transport_id": 1,
+            "departure_time": "2025-06-15T08:00:00",
+            "arrival_time": "2025-06-15T11:00:00",
+            "price": 15.0,
+            "available_seats": 40
+        }
+    ],
+    "Transport_Booking": [
+        {
+            "transport_booking_id": 1,
+            "booking_id": 1,
+            "transport_id": 1,
+            "transport_type": "Bus",
+            "quantity": 2,
+            "total_price": 30.0,
+            "created_at": "2025-06-09T08:51:43.477605",
+            "updated_at": "2025-06-09T08:51:43.477607"
+        }
+    ],
+    "Booking": [
+        {
+            "booking_id": 1,
+            "user_id": 1,
+            "tour_id": 1,
+            "total_price": 250.0,
+            "status": "confirmed",
+            "booking_date": "2025-06-09T08:51:43.477610",
+            "payment_status": "paid",
+            "payment_method": "credit_card",
+            "special_requests": "Vegetarian meals",
+            "start_date": "2025-06-15",
+            "created_at": "2025-06-09T08:51:43.477615",
+            "updated_at": "2025-06-09T08:51:43.477616"
+        }
+    ],
+    "Booking_Rooms": [
+        {
+            "booking_room_id": 1,
+            "booking_id": 1,
+            "room_id": 1,
+            "room_quantity": 1,
+            "total_room_price": 120.0,
+            "check_in_date": "2025-06-15",
+            "check_out_date": "2025-06-16"
+        }
+    ],
+    "Payment": [
+        {
+            "payment_id": 1,
+            "booking_id": 1,
+            "amount": 250.0,
+            "payment_date": "2025-06-09T08:51:43.477619",
+            "payment_method": "credit_card",
+            "payment_status": "completed",
+            "transaction_id": "TX123456789",
+            "created_at": "2025-06-09T08:51:43.477621",
+            "updated_at": "2025-06-09T08:51:43.477622"
+        }
+    ],
+    "Reviews": [
+        {
+            "review_id": 1,
+            "user_id": 1,
+            "booking_id": 1,
+            "rating": 5,
+            "review_text": "Amazing experience!",
+            "created_at": "2025-06-09T08:51:43.477624",
+            "updated_at": "2025-06-09T08:51:43.477625"
+        }
+    ],
+    "Notifications": [
+        {
+            "notification_id": 1,
+            "user_id": 1,
+            "message": "Your booking is confirmed!",
+            "read_status": false,
+            "created_at": "2025-06-09T08:51:43.477627",
+            "updated_at": "2025-06-09T08:51:43.477629"
+        }
+    ],
+    "Tour_Reviews": [
+        {
+            "review_id": 1,
+            "user_id": 1,
+            "tour_id": 1,
+            "rating": 5,
+            "review_text": "Wonderful views and service!",
+            "created_at": "2025-06-09T08:51:43.477630",
+            "updated_at": "2025-06-09T08:51:43.477632"
+        }
+    ]
+}

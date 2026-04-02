@@ -1,0 +1,9 @@
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="150" fill="#f0f8ff" stroke="#4169e1" stroke-width="2"/>
+  <text x="100" y="50" text-anchor="middle" font-family="Arial" font-size="14" fill="#4169e1">Hình ảnh xác nhận</text>
+  <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" fill="#4169e1">thanh toán</text>
+  <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Số tiền: 1,000,000 VND</text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Ngày: 29/08/2025</text>
+  <circle cx="30" cy="30" r="15" fill="#32cd32"/>
+  <text x="30" y="35" text-anchor="middle" font-family="Arial" font-size="12" fill="white">✓</text>
+</svg>

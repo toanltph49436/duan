@@ -1,0 +1,287 @@
+/* Enhanced Date Picker Styles */
+
+.enhanced-date-picker {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.enhanced-date-picker:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.enhanced-date-picker .ant-card-head {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px 12px 0 0;
+  border: none;
+}
+
+.enhanced-date-picker .ant-card-head-title {
+  color: white;
+  font-weight: 600;
+}
+
+.enhanced-date-picker .ant-card-body {
+  padding: 20px;
+}
+
+/* Custom Range Picker Styles */
+.custom-range-picker {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.custom-range-picker:hover {
+  border-color: #40a9ff;
+  box-shadow: 0 4px 12px rgba(64, 169, 255, 0.15);
+}
+
+.custom-range-picker.ant-picker-focused {
+  border-color: #1890ff;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+}
+
+.custom-range-picker .ant-picker-input input {
+  font-weight: 500;
+  text-align: center;
+}
+
+.custom-range-picker .ant-picker-separator {
+  color: #1890ff;
+  font-weight: bold;
+}
+
+/* Date Summary Styles */
+.date-summary {
+  background: linear-gradient(135deg, #f6ffed 0%, #f0f9ff 100%);
+  border: 1px solid #b7eb8f;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+}
+
+/* Validation Info Styles */
+.validation-info {
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 8px 12px;
+  border-left: 3px solid #d9d9d9;
+}
+
+/* Quick Selection Buttons */
+.enhanced-date-picker .ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.enhanced-date-picker .ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-date-picker .ant-btn-primary {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+.enhanced-date-picker .ant-btn-primary:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #9254de 100%);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+}
+
+/* Dropdown Panel Enhancements */
+.ant-picker-dropdown {
+  z-index: 9999;
+}
+
+.ant-picker-panel-container {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.ant-picker-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #dee2e6;
+  padding: 12px 16px;
+}
+
+.ant-picker-header-view button {
+  color: #495057;
+  font-weight: 600;
+}
+
+.ant-picker-header-view button:hover {
+  color: #1890ff;
+}
+
+/* Calendar Cells */
+.ant-picker-cell {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.ant-picker-cell:hover .ant-picker-cell-inner {
+  background: #e6f7ff;
+  border-color: #91d5ff;
+  transform: scale(1.05);
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  border-color: #1890ff;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+.ant-picker-cell-in-range .ant-picker-cell-inner {
+  background: linear-gradient(135deg, #e6f7ff 0%, #f9f0ff 100%);
+  border-color: #b7eb8f;
+}
+
+.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+/* Disabled dates */
+.ant-picker-cell-disabled .ant-picker-cell-inner {
+  background: #f5f5f5;
+  color: #d9d9d9;
+  cursor: not-allowed;
+}
+
+.ant-picker-cell-disabled:hover .ant-picker-cell-inner {
+  background: #f5f5f5;
+  border-color: #d9d9d9;
+  transform: none;
+}
+
+/* Today highlight */
+.ant-picker-cell-today .ant-picker-cell-inner {
+  border-color: #1890ff;
+  font-weight: 600;
+  position: relative;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background: #1890ff;
+  border-radius: 50%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .enhanced-date-picker .ant-card-body {
+    padding: 16px;
+  }
+  
+  .custom-range-picker {
+    font-size: 14px;
+  }
+  
+  .ant-picker-panel-container {
+    width: 100% !important;
+    max-width: 350px !important;
+  }
+  
+  .ant-picker-panels {
+    flex-direction: column !important;
+  }
+  
+  .date-summary {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enhanced-date-picker .ant-card-body {
+    padding: 12px;
+  }
+  
+  .custom-range-picker .ant-picker-input input {
+    font-size: 13px;
+  }
+  
+  .validation-info {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+/* Animation for state changes */
+.date-summary {
+  animation: slideInDown 0.3s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading states */
+.date-picker-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.date-picker-loading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Focus indicators for accessibility */
+.custom-range-picker:focus-within {
+  outline: 2px solid #1890ff;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .enhanced-date-picker {
+    border: 2px solid #000;
+  }
+  
+  .custom-range-picker {
+    border: 2px solid #000;
+  }
+  
+  .ant-picker-cell-selected .ant-picker-cell-inner {
+    background: #000;
+    color: #fff;
+  }
+}

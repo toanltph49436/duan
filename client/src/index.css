@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+body {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #fbc2eb 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Hide webkit scrollbar for horizontal scrolling */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Calendar disabled dates styling */
+.disabled-date {
+    background-color: #f3f4f6 !important;
+    color: #9ca3af !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+}
+
+.disabled-date:hover {
+    background-color: #f3f4f6 !important;
+    cursor: not-allowed !important;
+}
+
+/* FullCalendar specific disabled date styling */
+.fc .fc-day.disabled-date {
+    background-color: #f3f4f6 !important;
+}
+
+.fc .fc-day.disabled-date .fc-day-number {
+    color: #9ca3af !important;
+}
+
+.fc .fc-day.disabled-date:hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* Expired tour dates styling */
+.fc .fc-day.fc-day-past {
+    background-color: #f9fafb !important;
+}
+
+.fc .fc-day.fc-day-today {
+    background-color: #eff6ff !important;
+    border: 2px solid #3b82f6 !important;
+}
+
+/* Event styling for expired dates */
+.fc .fc-event.expired-event {
+    background-color: #9ca3af !important;
+    border-color: #6b7280 !important;
+    color: #6b7280 !important;
+}
+
+/* Hover effects for disabled dates */
+.fc .fc-day.disabled-date:hover .fc-day-number {
+    color: #6b7280 !important;
+}
+
+/* Custom styling for calendar header */
+.fc .fc-toolbar-title {
+    font-weight: 600 !important;
+    color: #1f2937 !important;
+}
+
+/* Button styling for today button */
+.fc .fc-today-button {
+    background-color: #3b82f6 !important;
+    border-color: #2563eb !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.fc .fc-today-button:hover {
+    background-color: #2563eb !important;
+    border-color: #1d4ed8 !important;
+}
+
+/* Navigation buttons styling */
+.fc .fc-prev-button,
+.fc .fc-next-button {
+    background-color: #f3f4f6 !important;
+    border-color: #d1d5db !important;
+    color: #374151 !important;
+}
+
+.fc .fc-prev-button:hover,
+.fc .fc-next-button:hover {
+    background-color: #e5e7eb !important;
+    border-color: #9ca3af !important;
+}

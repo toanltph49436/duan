@@ -1,0 +1,26 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Học React",
+        "dueDate": "2025-03-01",
+        "priority": "high",
+        "status": "Đang thực hiện"
+      },
+      {
+        "id": 2,
+        "title": "Viết báo cáo",
+        "dueDate": "2025-03-05",
+        "priority": "medium",
+        "status": "Hoàn thiện"
+      },
+      {
+        "id": 3,
+        "title": "Làm bài kiểm tra",
+        "dueDate": "2025-03-05",
+        "priority": "medium",
+        "status": "Chờ thực hiện"
+      }
+    ],
+    "users": []
+  }
